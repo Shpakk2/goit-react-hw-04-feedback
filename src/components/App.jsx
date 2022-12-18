@@ -1,5 +1,7 @@
 import React from "react";
 
+import css from "./App.module.css"
+
 import { Section } from './Section/Section';
 import { FeedbackOptions} from "./FeedbackOptions/FeedbackOptions"
 import { Statistics} from "./Statistics/Statistics"
@@ -26,7 +28,7 @@ state = {
 
   render() {
     return (
-      <div>
+      <div className={css.wrapper}>
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={Object.keys(this.state)}
