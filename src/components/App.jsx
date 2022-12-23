@@ -20,8 +20,8 @@ export const App = () => {
      case "neutral":
        setNeutral(neutral + 1);
        break;
-     case "good":
-       setBad(good + 1);
+     case "bad":
+       setBad(bad + 1);
        break;
      default:
        return;
